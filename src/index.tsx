@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Props {
+export interface Props {
   children: string;
 }
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
@@ -11,7 +11,8 @@ interface Props {
 export const Thing = ({ children }: Props) => {
   return (
     <div className="text-xl text-pink-500 p-4 bg-gray-200 rounded-lg">
-      {children || `the snozzberries taste like snozzberries data`}
+      {children ||
+        `Horizontal design plays an important role in creating good elements as part of the design system.`}
     </div>
   );
 };
