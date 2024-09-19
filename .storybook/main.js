@@ -12,7 +12,7 @@ module.exports = {
       },
     },
   ],
-  staticDirs: ['./storybook-static"'],
+  staticDirs: ['../public'],
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
