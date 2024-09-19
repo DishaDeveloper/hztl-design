@@ -20,10 +20,10 @@
         "test": "tsdx test --passWithNoTests",
         "lint": "npx eslint src",
         "prepare": "npm run build",
-        "storybook": "NODE_OPTIONS=\"--openssl-legacy-provider\" start-storybook -p 6006",
-        "build-storybook": "build-storybook -s public",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook -o ../public",
         "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify",
-        "serve-storybook": "serve storybook-static"
+        "serve-storybook": "serve ../public"
     },
     "peerDependencies": {
         "react": ">=18"
