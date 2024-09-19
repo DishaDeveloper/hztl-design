@@ -21,8 +21,9 @@
         "lint": "npx eslint src",
         "prepare": "npm run build",
         "storybook": "NODE_OPTIONS=\"--openssl-legacy-provider\" start-storybook -p 6006",
-        "build-storybook": "build-storybook",
-        "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify"
+        "build-storybook": "build-storybook -s public",
+        "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify",
+        "serve-storybook": "serve storybook-static"
     },
     "peerDependencies": {
         "react": ">=18"
