@@ -1,7 +1,7 @@
 {
     "name": "hztl-design",
     "author": "Horizontal",
-    "version": "0.0.0-hztl",
+    "version": "0.0.1-hztl",
     "license": "ISC",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
