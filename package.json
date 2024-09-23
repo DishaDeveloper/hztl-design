@@ -21,7 +21,7 @@
     "lint": "npx eslint src",
     "prepare": "npm run build",
     "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6007",
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
@@ -85,10 +85,15 @@
     "@emotion/styled": "11.10.5",
     "@headlessui/react": "1.7.2",
     "classnames": "2.3.2",
+    "debounce": "^2.1.1",
     "framer-motion": "7.5.0",
-    "react-icons": "4.7.1",
+    "i": "^0.3.7",
+    "npm": "^10.8.3",
+    "react-icons": "^4.7.1",
     "storybook-theme-switch-addon": "^1.0.1",
-    "twin.macro": "^3.0.0"
+    "tailwind-merge": "^2.5.2",
+    "twin.macro": "^3.0.0",
+    "vitest": "^2.1.1"
   },
   "babelMacros": {
     "twin": {
