@@ -1,5 +1,5 @@
 {
-  "name": "react-package",
+  "name": "hztl-design",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -9,8 +9,7 @@
     "build-storybook": "storybook build",
     "build": "rollup -c && npx tsc && npm run build-tailwind",
     "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify",
-    "start": "storybook dev -p 6006",
-    "test": "npm install -g serve"
+    "start": "storybook dev -p 6006"
   },
   "keywords": [],
   "author": "Disha",

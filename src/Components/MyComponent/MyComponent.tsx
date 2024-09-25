@@ -7,7 +7,7 @@ interface MyComponentProps {
 
 export const MyComponent: React.FC<MyComponentProps> = ({ className = "" }) => {
   const baseStyle = "py-2 px-4 rounded"; // Base styles
-  const themeStyle = document.documentElement.classList.contains("secondary")
+  const themeStyle = document?.documentElement?.classList?.contains("secondary")
     ? "bg-gray-500 hover:bg-gray-700 text-white" // Secondary styles
     : "bg-blue-500 hover:bg-blue-700 text-white"; // Primary styles
 
