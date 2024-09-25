@@ -8,7 +8,7 @@
   "scripts": {
     "build-storybook": "storybook build",
     "build": "rollup -c && npx tsc && npm run build-tailwind",
-    "build-tailwind": "npx tailwindcss -o ./dist/styles.css --minify",
+    "build-tailwind": "npx tailwindcss -i ./src/style/tailwind.css -o ./dist/styles.css --minify",
     "start": "storybook dev -p 6006"
   },
   "keywords": [],

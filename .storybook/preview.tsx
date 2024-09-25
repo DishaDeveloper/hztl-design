@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import "../src/style/index.css"; // Ensure your Tailwind CSS is imported
+import "../src/style/tailwind.css"; // Ensure your Tailwind CSS is imported
 import React from "react";
 
 // Define the Preview configuration
