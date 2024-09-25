@@ -40,6 +40,11 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
     className
   );
 
+  // Determine the SVG class based on className
+  const svgClass = className.includes("secondary")
+    ? "w-5 h-5 text-secondary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    : "w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300";
+
   return (
     <div className={mergedClasses}>
       <section className="bg-white dark:bg-gray-900">
@@ -57,7 +62,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +86,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +103,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +127,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +151,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +170,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className={svgClass}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
