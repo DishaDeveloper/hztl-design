@@ -54,9 +54,8 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
               Empowering Teams to Achieve More
             </h2>
             <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-              At Flowbite, we innovate at the intersection of technology and
-              teamwork, driving sustainable growth through collaboration and
-              creativity.
+              we innovate at the intersection of technology and teamwork,
+              driving sustainable growth through collaboration and creativity.
             </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
