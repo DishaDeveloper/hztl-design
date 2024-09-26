@@ -1,9 +1,0 @@
-# .npmignore
-tailwind.config.js
-tsconfig.json
-rollup.config.js
-src/
-tests/
-storybook/
-public/
-static/
