@@ -1,11 +1,8 @@
+/* src/styles/fonts.css */
+/* src/styles/fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.light {
-    @apply bg-white text-black; /* Light theme styles */
-  }
-  
-  .dark {
-    @apply bg-gray-900 text-white; /* Dark theme styles */
-  }
+
