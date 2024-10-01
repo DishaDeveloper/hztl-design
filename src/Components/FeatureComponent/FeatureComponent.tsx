@@ -14,13 +14,13 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
   const themeStyle = () => {
     if (typeof document !== "undefined") {
       return document?.documentElement?.classList?.contains("secondary")
-        ? "bg-gray-500 hover:bg-gray-700 text-white" // Secondary styles
-        : "bg-blue-500 hover:bg-blue-700 text-white";
+        ? "bg-secondary-button-color-1 hover:bg-secondary-button-hover-color-1 text-white" // Secondary styles
+        : "bg-primary-button-color-1 hover:bg-primary-button-hover-color-1 text-white";
     } else {
       const isSecondary = className.includes("secondary");
       return isSecondary
-        ? "bg-gray-500 hover:bg-gray-700 text-white" // Secondary styles
-        : "bg-blue-500 hover:bg-blue-700 text-white";
+        ? "bg-secondary-button-color-1  hover:bg-secondary-button-hover-color-1 text-white" // Secondary styles
+        : "bg-primary-button-color-1 hover:bg-primary-button-hover-color-1 text-white";
     }
   };
 
@@ -42,8 +42,8 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
 
   // Determine the SVG class based on className
   const svgClass = className.includes("secondary")
-    ? "w-5 h-5 text-secondary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-    : "w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300";
+    ? "w-5 h-5 bg-secondary-button-color-1 lg:w-6 lg:h-6 dark:text-primary-300"
+    : "w-5 h-5 bg-primary-button-color-1 lg:w-6 lg:h-6 dark:text-primary-300";
 
   return (
     <div className={mergedClasses}>
@@ -51,16 +51,12 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Empowering Teams to Achieve More
+              WHY DP WORLD
             </h2>
-            <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-              we innovate at the intersection of technology and teamwork,
-              driving sustainable growth through collaboration and creativity.
-            </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-button-color-1 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
                   className={svgClass}
                   fill="currentColor"
@@ -84,7 +80,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-button-color-1 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
                   className={svgClass}
                   fill="currentColor"
@@ -104,7 +100,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-button-color-1 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
                   className={svgClass}
                   fill="currentColor"
@@ -129,7 +125,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-button-color-1 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
                   className={svgClass}
                   fill="currentColor"
@@ -154,7 +150,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-button-color-1 lg:h-12 lg:w-12 dark:bg-primary-900">
                 <svg
                   className={svgClass}
                   fill="currentColor"

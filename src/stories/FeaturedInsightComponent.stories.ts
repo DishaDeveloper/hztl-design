@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { InformationComponent } from "../Components/InformationComponent";
+import { FeaturedInsightComponent } from "../Components/FeaturedInsightComponent";
 
-const meta: Meta<typeof InformationComponent> = {
-  title: "Components/InformationComponent",
-  component: InformationComponent,
+const meta: Meta<typeof FeaturedInsightComponent> = {
+  title: "Components/FeaturedInsightComponent",
+  component: FeaturedInsightComponent,
   parameters: {
     layout: '',
   },
@@ -11,7 +11,7 @@ const meta: Meta<typeof InformationComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof InformationComponent>;
+type Story = StoryObj<typeof FeaturedInsightComponent>;
 
 export const Default: Story = {
   args: {
@@ -21,7 +21,6 @@ export const Default: Story = {
 };
 export const variant1: Story = {
   args: {
-    backgroundImage: true,
     componentTheme:'primary'
   },
 };

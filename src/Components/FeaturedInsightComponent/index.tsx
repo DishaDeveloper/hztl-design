@@ -1,0 +1,1 @@
+export { FeaturedInsightComponent } from "./FeaturedInsightComponent";

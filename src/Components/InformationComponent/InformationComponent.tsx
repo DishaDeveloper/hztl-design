@@ -1,25 +1,23 @@
 import React, { ReactNode } from "react";
 
-interface InformationComponent {
-  children?: ReactNode; // Optional children
+interface InformationComponentProps {
+  children?: ReactNode;
   componentTheme?: string;
   backgroundImage?: boolean;
 }
 
 export const InformationComponent: React.FunctionComponent<
-  InformationComponent
+  InformationComponentProps
 > = ({ children, componentTheme = "", backgroundImage = false }) => {
-  // Function to determine the current theme
   const themeStyle = () => {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("primary")
         ? "primary"
         : "secondary";
     }
-    return componentTheme ? componentTheme : "primary"; // Default to primary if in SSR
+    return componentTheme !== "" ? componentTheme : "primary";
   };
 
-  // Define Tailwind classes based on the dynamic theme
   const themesFunction = (theme: string) => {
     const styles: any = {
       primary: {
