@@ -21,7 +21,8 @@ export const Default: Story = {
 };
 export const variant1: Story = {
   args: {
-    componentTheme:'primary'
+    componentTheme:'primary',
+    variant:'Linkview'
   },
 };
 

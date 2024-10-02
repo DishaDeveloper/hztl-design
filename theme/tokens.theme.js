@@ -12,6 +12,32 @@ export const TOKENS = {
       backgroundImage: {
         'background-cover': "url('https://fastly.picsum.photos/id/1009/1920/800.jpg?blur=5&grayscale&hmac=-5_s4J--6DYqMTQM91YRcRRl2dNpHr7zlZzq58z0wOc')",
       },
+      fontSize: {
+        'xs': '0.75rem',  // 12px
+        'sm': '0.875rem', // 14px
+        'base': '1rem',   // 16px
+        'lg': '1.125rem', // 18px
+        'xl': '1.25rem',  // 20px
+        '2xl': '1.5rem',  // 24px
+        '3xl': '1.875rem', 
+        '4xl': '2.25rem', 
+        '5xl': '3rem',
+      },
+      lineHeight: {
+        'none': '1',
+        'tight': '1.25',
+        'snug': '1.375',
+        'normal': '1.5',
+        'relaxed': '1.625',
+        'loose': '2',
+        'extra-loose': '2.5',
+        'custom-tight': '1.1',
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        bold: 700,
+      },
   },
   theme: {
     primary: {
@@ -21,6 +47,7 @@ export const TOKENS = {
         "primary-background-300": "#ff3d45",
         "primary-text-100" : "#FFFFFF",
         "primary-text-200" : "#676270",
+        "primary-text-300" : "#6E6E72",
         "primary-button-color-1": "#7C3AED", 
         "primary-button-hover-color-1": "#5B21B6", 
       },
@@ -42,7 +69,7 @@ export const TOKENS = {
         "secondary-button-hover-color-1": "#BE185D", 
       },
       fontFamily: {
-        lora: ['Lora', 'serif'],
+        lato: ['Lato', 'sans-serif'],
       },
       backgroundImage: {
         "secondary-bg-1": "url('https://fastly.picsum.photos/id/637/1920/800.jpg?blur=5&grayscale&hmac=a9a83kGr2Nz8PS3UfUEqJYTh6Lo0suy4DyDjI1buxUU')",

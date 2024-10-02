@@ -4,12 +4,20 @@ import {PromoComponent  } from '../Components/PromoComponent'; // Adjust the imp
 const meta: Meta<typeof PromoComponent> = {
   title: 'Components/PromoComponent',
   component: PromoComponent,
+  tags: ['autodocs'],
 };
 
 export default meta;
 type Story = StoryObj<typeof PromoComponent>;
 
 // Default story
-export const Default: Story = {
-  args: {},
+export const LeftImage: Story = {
+  args: {
+    variant:'LeftImage'
+  },
+};
+export const RightImage: Story = {
+  args: {
+     variant:'RightImage'
+  },
 };
