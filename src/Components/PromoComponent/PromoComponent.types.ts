@@ -34,7 +34,7 @@ export type PromoComponentProps = {
     componentName?:string;
     dataSource?:string;
     params?:{},
-    fields : {
+    fields? : {
         variant:string,
         headingTitle:string,
         description: Description;

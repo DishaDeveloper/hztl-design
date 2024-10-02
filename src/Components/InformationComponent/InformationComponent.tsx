@@ -15,6 +15,8 @@ export const InformationComponent: React.FunctionComponent<
     return componentTheme !== "" ? componentTheme : "primary";
   };
 
+  console.log(themeStyle(), "@@");
+
   const themesFunction = (theme: string) => {
     const styles: any = {
       primary: {

@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 
 export type InformationComponentProps = {
-    children?: ReactNode;
-    componentTheme?: string;
-    backgroundImage?: boolean;
-uid: string;
-componentName: string;
-dataSource: string;
-params: Record<string, unknown>;
-fields: {
+children?: ReactNode;
+componentTheme?: string;
+backgroundImage?: boolean;
+uid?: string;
+componentName?: string;
+dataSource?: string;
+params?: Record<string, unknown>;
+fields?: {
     variant: string;
     headingTitle: string;
     description: {
