@@ -35,10 +35,10 @@ export type PromoComponentProps = {
     dataSource?:string;
     params?:{},
     fields? : {
-        variant:string,
-        headingTitle:string,
-        description: Description;
-        image: Image;
-        promoLink: PromoLink;
+        variant?:string,
+        headingTitle?:string,
+        description?: Description;
+        image?: Image;
+        promoLink?: PromoLink;
     }
   };
