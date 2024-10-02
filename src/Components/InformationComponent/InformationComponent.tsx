@@ -22,7 +22,7 @@ export const InformationComponent: React.FunctionComponent<
         componentBGColor: `bg-primary-background-100 text-primary-text-100`,
         textProperty: "",
         buttonColor:
-          "bg-primary-button-color-1 hover:bg-primary-button-hover-color-1",
+          "bg-primary-button-color-2 hover:bg-primary-button-hover-color-1",
       },
       secondary: {
         componentBG: "bg-secondary-bg-1 text-secondary-text-200 font-lato",

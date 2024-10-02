@@ -21,7 +21,7 @@ export const FeaturedInsightComponent: React.FC<
         componentBG: "text-black font-roboto",
         buttonColor:
           "bg-primary-button-color-1 hover:bg-primary-button-hover-color-1 text-white py-2 px-4 rounded-lg transition text-center",
-        LinkColor: "text-black hover:text-primary-button-color-1",
+        LinkColor: "text-black hover:text-primary-button-hover-color-1",
         cardBG: "bg-white",
         description: "text-primary-text-300",
       },

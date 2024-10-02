@@ -42,14 +42,15 @@ export const TOKENS = {
   theme: {
     primary: {
       colors: {
-        "primary-background-100": "#4F46E5",
+        "primary-background-100": "#1e1450",
         "primary-background-200": "#ff8b8f",
         "primary-background-300": "#ff3d45",
         "primary-text-100" : "#FFFFFF",
         "primary-text-200" : "#676270",
         "primary-text-300" : "#6E6E72",
-        "primary-button-color-1": "#7C3AED", 
-        "primary-button-hover-color-1": "#5B21B6", 
+        "primary-button-color-1": "#1e1450", 
+        "primary-button-color-2": "#15d086", 
+        "primary-button-hover-color-1": "#4d4faf", 
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
