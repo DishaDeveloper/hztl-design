@@ -44,12 +44,12 @@ export const FeaturedInsightComponent: React.FC<
     return (
       <div className="container mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="lg:flex justify-between items-center mb-8">
           <h2 className={`text-4xl font-bold ${themeStyles.textProperty}`}>
             {FeatureInsightData?.headingTitle}
           </h2>
           <a
-            className={`text-white py-2 px-4 rounded-lg transition ${themeStyles.buttonHover} ${themeStyles.buttonColor}`}
+            className={`text-white py-2 px-4 rounded-lg transition block ${themeStyles.buttonHover} ${themeStyles.buttonColor}`}
             href={FeatureInsightData?.allInsightsLink?.value?.href}
             target={FeatureInsightData?.allInsightsLink?.value?.target}
           >
@@ -100,7 +100,9 @@ export const FeaturedInsightComponent: React.FC<
   };
 
   return (
-    <section className={`py-12 ${themeStyles.componentBG}`}>
+    <section
+      className={`py-12 px-[16px] xl:px-[0]  ${themeStyles.componentBG}`}
+    >
       {children ? children : <FeatureInsightComponentDefault />}
     </section>
   );
