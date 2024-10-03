@@ -30,7 +30,7 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
         cardDescription: "text-primary-text-300",
       },
       secondary: {
-        componentBG: `bg-secondary-background-100 text-secondary-text-100 font-lato ${
+        componentBG: `bg-primary-background-100 text-secondary-text-100 font-lato ${
           variant === "LeftVariant" ? "text-left" : "text-center"
         }`,
         headingTitle: "text-white",

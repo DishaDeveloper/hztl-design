@@ -28,7 +28,7 @@ export const PromoComponent: React.FC<PromoComponentProps> = ({
           "text-white py-3 px-6 rounded-full transition bg-primary-button-color-1 hover:bg-primary-button-hover-color-1",
       },
       secondary: {
-        componentWrapper: "bg-gray-800 text-white font-lato",
+        componentWrapper: "bg-primary-background-100 text-white font-lato",
         imageClass: "w-full object-cover rounded-lg shadow-md",
         headingClass: "text-4xl font-bold mb-4",
         descriptionClass: "text-lg mb-6 leading-relaxed",

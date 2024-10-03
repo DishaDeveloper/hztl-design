@@ -64,6 +64,7 @@ export const TOKENS = {
         "secondary-background-100": "#1E293B",
         "secondary-background-200": "#191b1c",
         "secondary-background-300": "#fdfd55",
+        "secondary-background-400": "#5154b6",
         "secondary-text-100" : "#ffffff",
         "secondary-text-200" : "#808080",
         "secondary-button-color-1": "#EC4899", 
