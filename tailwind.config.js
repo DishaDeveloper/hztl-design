@@ -8,17 +8,23 @@ if (!TOKENS || !TOKENS.theme || !TOKENS.theme.primary || !TOKENS.theme.secondary
 }
 
 // Define the function to create prefixed colors wrapped inside `colors` object
-const createPrefixedColors = (prefix, colors) => {
-  const prefixedColors = {};
-  Object.keys(colors).forEach(key => {
-    prefixedColors[`${prefix}-${key}`] = colors[key];
+const prefixTheme = (theme, prefix) => {
+  const prefixedTheme = {};
+
+  Object.keys(theme).forEach((key) => {
+    if (typeof theme[key] === 'object' && !Array.isArray(theme[key])) {
+      prefixedTheme[key] = prefixTheme(theme[key], prefix); // recursive for nested objects
+    } else {
+      prefixedTheme[`${prefix}-${key}`] = theme[key];
+    }
   });
-  return { colors: prefixedColors };
+
+  return prefixedTheme;
 };
 
 // Create prefixed colors wrapped inside `colors`
-const primaryTheme = TOKENS.theme.primary;
-const secondaryTheme = TOKENS.theme.secondary;
+const primaryTheme = prefixTheme(TOKENS.theme.primary, 'primary');
+const secondaryTheme = prefixTheme(TOKENS.theme.secondary, 'secondary');
 
 // Merge the primary and secondary prefixed colors under the same `colors` key
 const MERGEDTOKENSTHEME = mergeConfigs(primaryTheme, secondaryTheme);

@@ -1,6 +1,7 @@
 import React from "react";
 import defaultData from "./FeatureComponent.mock";
 import { FeatureComponentProps } from "./FeatureComponent.types";
+import { themesFunction } from "./FeatureComponent.themes";
 
 export const FeatureComponent: React.FC<FeatureComponentProps> = ({
   children,
@@ -18,33 +19,8 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
     return componentTheme !== "" ? componentTheme : "primary";
   };
 
-  const themesFunction = (theme: string) => {
-    const styles: any = {
-      primary: {
-        componentBG: `bg-white text-black font-roboto ${
-          variant === "LeftVariant" ? "text-left" : "text-center"
-        }`,
-        headingTitle: "text-gray-900",
-        imageClass: "object-cover w-[100px] h-auto inline-block",
-        cardTitle: "mb-2 text-xl font-bold text-gray-900 ",
-        cardDescription: "text-primary-text-300",
-      },
-      secondary: {
-        componentBG: `bg-primary-background-100 text-secondary-text-100 font-lato ${
-          variant === "LeftVariant" ? "text-left" : "text-center"
-        }`,
-        headingTitle: "text-white",
-        imageClass:
-          "object-cover w-[100px] h-auto inline-block bg-white rounded-[8px]",
-        cardTitle: "mb-2 text-xl font-bold dark:text-white ",
-        cardDescription: "text-white",
-      },
-    };
-    return styles[theme] || styles.primary;
-  };
-
   const currentTheme = themeStyle();
-  const themeStyles = themesFunction(currentTheme);
+  const themeStyles = themesFunction(currentTheme, variant);
 
   const FeatureComponentDefault = () => {
     return (
