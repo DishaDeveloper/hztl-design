@@ -1,5 +1,5 @@
 {
-  "name": "@disha/hztl-design",
+  "name": "@dishadeveloper/hztl-design",
   "version": "1.1.2",
   "description": "A modern React component library with TypeScript support and Tailwind CSS styling",
   "main": "dist/index.js",
