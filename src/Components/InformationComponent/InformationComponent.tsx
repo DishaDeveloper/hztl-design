@@ -7,7 +7,7 @@ export const InformationComponent: React.FunctionComponent<
   InformationComponentProps
 > = ({ children, componentTheme = "", backgroundImage = false }) => {
   const InformationData = defaultData?.fields;
-  const themeStyle = () => {
+  const themeStyle = (): string => {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("primary")
         ? "primary"
@@ -16,12 +16,10 @@ export const InformationComponent: React.FunctionComponent<
     return componentTheme !== "" ? componentTheme : "primary";
   };
 
-  console.log(themeStyle(), "@@");
-
   const currentTheme = themeStyle();
   const themeStyles = themesFunction(currentTheme);
 
-  const InformationComponentData = () => {
+  const InformationComponentData = (): JSX.Element => {
     return (
       <>
         <h1

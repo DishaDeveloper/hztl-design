@@ -9,7 +9,7 @@ export const PromoComponent: React.FC<PromoComponentProps> = ({
   variant = "LeftImage",
 }) => {
   const ProdoData = defaultData?.fields;
-  const themeStyle = () => {
+  const themeStyle = (): string => {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("primary")
         ? "primary"
@@ -21,7 +21,7 @@ export const PromoComponent: React.FC<PromoComponentProps> = ({
   const currentTheme = themeStyle();
   const themeStyles = themesFunction(currentTheme);
 
-  const DefaultComponent = () => {
+  const DefaultComponent = (): JSX.Element => {
     return (
       <>
         <div className="lg:w-1/2 w-full">

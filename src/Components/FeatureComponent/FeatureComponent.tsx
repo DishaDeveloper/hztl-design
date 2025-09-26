@@ -10,7 +10,8 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
 }) => {
   const componentData = defaultData?.fields?.featureCard;
 
-  const themeStyle = () => {
+  //for the storybook and props theme
+  const themeStyle = (): string => {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("primary")
         ? "primary"
@@ -18,11 +19,11 @@ export const FeatureComponent: React.FC<FeatureComponentProps> = ({
     }
     return componentTheme !== "" ? componentTheme : "primary";
   };
-
   const currentTheme = themeStyle();
   const themeStyles = themesFunction(currentTheme, variant);
 
-  const FeatureComponentDefault = () => {
+
+  const FeatureComponentDefault = (): JSX.Element => {
     return (
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="mb-8 lg:mb-16">

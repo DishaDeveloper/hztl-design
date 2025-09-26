@@ -7,7 +7,7 @@ export const FeaturedInsightComponent: React.FC<
   FeaturedInsightComponentProps
 > = ({ children, componentTheme = "", variant = "" }) => {
   const FeatureInsightData = defaultData?.fields;
-  const themeStyle = () => {
+  const themeStyle = (): string => {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("primary")
         ? "primary"
@@ -19,7 +19,7 @@ export const FeaturedInsightComponent: React.FC<
   const currentTheme = themeStyle();
   const themeStyles = themesFunction(currentTheme);
 
-  const FeatureInsightComponentDefault = () => {
+  const FeatureInsightComponentDefault = (): JSX.Element => {
     return (
       <div className="container mx-auto">
         {/* Header */}

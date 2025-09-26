@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { BaseComponentProps, Description, Image } from "../../types/common";
 
 interface FeatureCards {
     id: string;
@@ -6,31 +6,16 @@ interface FeatureCards {
     name: string;
     displayName: string;
     fields: {
-      description: {
-        value: string;
-      };
+      description: Description;
       svgImageShow: string;
       svhImageClass: string;
-      image: {
-        value: {
-          src: string;
-          alt: string;
-          width: string;
-          height: string;
-        };
-      };
+      image: Image;
     };
 }
-export type FeatureComponentProps = {
-    children?:ReactNode;
-    componentTheme?: string;
-    variant?: string;
-    uid?: string;
-    componentName?: string;
-    dataSource?: string;
-    params?: Record<string, unknown>;
+
+export interface FeatureComponentProps extends BaseComponentProps {
     fields?: {
       headingTitle: string;
       featureCard: FeatureCards[];
     };
-  };
+}
