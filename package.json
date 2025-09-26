@@ -1,23 +1,45 @@
 {
-  "name": "hztl-design",
+  "name": "@disha/hztl-design",
   "version": "1.1.2",
-  "description": "",
+  "description": "A modern React component library with TypeScript support and Tailwind CSS styling",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist/",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build-storybook": "storybook build",
     "build": "rollup -c && npx tsc && npm run build-tailwind",
     "build-tailwind": "npx tailwindcss -i ./src/style/tailwind.css -o ./dist/styles.css --minify",
-    "start": "storybook dev -p 6006"
+    "start": "storybook dev -p 6006",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
   },
-  "keywords": [],
-  "author": "Disha",
+  "keywords": [
+    "react",
+    "typescript",
+    "components",
+    "ui",
+    "tailwind",
+    "design-system",
+    "storybook"
+  ],
+  "author": {
+    "name": "Disha",
+    "email": "your-email@example.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hztl-design.git"
+  },
+  "homepage": "https://github.com/yourusername/hztl-design#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/hztl-design/issues"
+  },
   "dependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-typescript": "^12.1.0",
