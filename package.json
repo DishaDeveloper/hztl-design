@@ -1,5 +1,5 @@
 {
-  "name": "hztl-design",
+  "name": "hztl-design-system",
   "version": "1.1.4",
   "description": "A modern React component library with TypeScript support and Tailwind CSS styling",
   "main": "dist/index.js",
